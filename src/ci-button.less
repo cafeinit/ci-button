@@ -42,7 +42,11 @@
 .ci-button {
   .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
   .ci-button-size(64, 36, 16, @FONT_SIZE_NORMAL);
+}
 
+.ci-button,
+.ci-button_block,
+.ci-button_fab {
   &:hover {
     background-color: lighten(@COLOR_GRAY_LIGHTER, 10%);
   }
@@ -125,4 +129,26 @@
 
 .ci-button_big {
   .ci-button-size(96, 44, 16, @FONT_SIZE_BIG);
+}
+
+
+.ci-button_fab {
+  @size: 36 * @REM;
+
+  .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
+
+  width: @size;
+  height: @size;
+  padding: 0;
+  margin: 8 * @REM;
+  border-radius: @size;
+}
+
+.ci-button_block {
+  .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
+  .ci-button-size(64, 36, 16, @FONT_SIZE_NORMAL);
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
