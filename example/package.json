@@ -1,0 +1,33 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "CafeInit UI Button example",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "http-server ./dist -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-ui-button.git"
+  },
+  "keywords": [
+    "CafeInit",
+    "CSS"
+  ],
+  "author": "burning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-ui-button/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-ui-button#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0",
+    "http-server": "^0.10.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}
