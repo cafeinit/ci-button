@@ -4,7 +4,9 @@
   "description": "CafeInit UI button",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
+    "build": "gulp && npm run build:amd && npm run build:var",
+    "build:amd": "webpack --config ./webpack.config.amd.js",
+    "build:var": "webpack --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,11 +24,19 @@
   },
   "homepage": "https://github.com/cafeinit/ci-ui-button#readme",
   "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "css-loader": "^0.28.4",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.4.2",
+    "gulp-clean-css": "^3.2.0",
     "gulp-header": "^1.8.8",
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "less-plugin-autoprefix": "^1.5.1"
+    "less-plugin-autoprefix": "^1.5.1",
+    "pug": "^2.0.0-rc.2",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0"
   }
 }

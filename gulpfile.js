@@ -30,7 +30,7 @@ gulp.task('default', ['build'])
 
 gulp.task('build', () => {
   return gulp.src([
-    './src/main.less'
+    './src/style/main.less'
   ])
     .pipe(less({
       plugins: [ autoprefix ]
