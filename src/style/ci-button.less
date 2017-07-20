@@ -36,13 +36,13 @@
 }
 
 .ci-button,
-.ci-button_block {
+.ci-button-block {
   .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
 }
 
 .ci-button,
-.ci-button_block,
-.ci-button_flat {
+.ci-button-block,
+.ci-button-flat {
   .ci-button-size(
     @BUTTON_MIN_WIDTH,
     @BUTTON_HEIGHT,
@@ -51,8 +51,12 @@
 }
 
 .ci-button,
-.ci-button_block,
-.ci-button_fab {
+.ci-button-block,
+.ci-button-fab {
+  // .ci-button__text {
+  //   color: @COLOR_WHITE;
+  // }
+
   &:hover {
     background-color: lighten(@COLOR_GRAY_LIGHTER, 10%);
   }
@@ -77,8 +81,8 @@
 }
 
 .ci-button,
-.ci-button_block,
-.ci-button_flat, {
+.ci-button-block,
+.ci-button-flat, {
   &.ci-button_big {
     .ci-button-size(
       @BIG_BUTTON_MIN_WIDTH,
@@ -97,14 +101,14 @@
 }
 
 
-.ci-button_block {
+.ci-button-block {
   width: 100%;
   margin-left: auto!important;
   margin-right: auto!important;
 }
 
 
-.ci-button_flat {
+.ci-button-flat {
   .ci-button(@COLOR_GRAY_DARKER, transparent);
 
   &:hover {
@@ -143,7 +147,7 @@
 }
 
 
-.ci-button_fab {
+.ci-button-fab {
   @size: @BUTTON_HEIGHT;
   .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
   .ci-button-size(@size, @size, 0, @BUTTON_FONT_SIZE);

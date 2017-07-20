@@ -38,37 +38,37 @@
 
     h3 Flat Button
 
-    ci-button(modifier="flat" text="DEFAULT")
-    ci-button(modifier="flat" color="primary" text="PRIMARY")
-    ci-button(modifier="flat" color="secondary" text="SECONDARY")
+    ci-button-flat(text="DEFAULT")
+    ci-button-flat(color="primary" text="PRIMARY")
+    ci-button-flat(color="secondary" text="SECONDARY")
 
 
     h3 Flat Radius Button
 
-    ci-button(modifier="flat radius" text="DEFAULT")
-    ci-button(modifier="flat radius" color="primary" text="PRIMARY")
-    ci-button(modifier="flat radius" color="secondary" text="SECONDARY")
+    ci-button-flat(modifier="radius" text="DEFAULT")
+    ci-button-flat(modifier="radius" color="primary" text="PRIMARY")
+    ci-button-flat(modifier="radius" color="secondary" text="SECONDARY")
 
 
     h3 Flat Border Button
 
-    ci-button(modifier="flat border" text="DEFAULT")
-    ci-button(modifier="flat border" color="primary" text="PRIMARY")
-    ci-button(modifier="flat border" color="secondary" text="SECONDARY")
+    ci-button-flat(modifier="border" text="DEFAULT")
+    ci-button-flat(modifier="border" color="primary" text="PRIMARY")
+    ci-button-flat(modifier="border" color="secondary" text="SECONDARY")
 
 
     h3 Flat Raised Button
 
-    ci-button(modifier="flat raised border" text="DEFAULT")
-    ci-button(modifier="flat raised border" color="primary" text="PRIMARY")
-    ci-button(modifier="flat raised border" color="secondary" text="SECONDARY")
+    ci-button-flat(modifier="raised border" text="DEFAULT")
+    ci-button-flat(modifier="raised border" color="primary" text="PRIMARY")
+    ci-button-flat(modifier="raised border" color="secondary" text="SECONDARY")
 
 
     h3 All Style Button
 
-    ci-button(modifier="flat border radius raised" text="DEFAULT")
-    ci-button(modifier="flat border radius raised" color="primary" text="PRIMARY")
-    ci-button(modifier="flat border radius raised" color="secondary" text="SECONDARY")
+    ci-button-flat(modifier="border radius raised" text="DEFAULT")
+    ci-button-flat(modifier="border radius raised" color="primary" text="PRIMARY")
+    ci-button-flat(modifier="border radius raised" color="secondary" text="SECONDARY")
 
     h3 Button Size
 
@@ -89,24 +89,24 @@
 
     h3 Floating Action Button
 
-    ci-button(modifier="fab" text="Del")
-    ci-button(modifier="fab" color="primary" text="Add")
-    ci-button(modifier="fab" color="secondary" text="Top")
+    ci-button-fab(text="Del")
+    ci-button-fab(color="primary" text="Add")
+    ci-button-fab(color="secondary" text="Top")
 
-    ci-button(modifier="fab" size="small" text="Del")
-    ci-button(modifier="fab" color="primary" text="Add")
-    ci-button(modifier="fab" color="secondary" size="big" text="Top")
+    ci-button-fab(size="small" text="Del")
+    ci-button-fab(color="primary" text="Add")
+    ci-button-fab(color="secondary" size="big" text="Top")
 
     h3 Block Button
 
     div(style="width: 320px; margin: 0 auto;")
-      ci-button(modifier="block radius" text="DEFAULT")
-      ci-button(modifier="block radius" color="primary" text="PRIMARY")
-      ci-button(modifier="block radius" color="secondary" text="SECONDARY")
+      ci-button-block(modifier="radius" text="DEFAULT")
+      ci-button-block(modifier="radius" color="primary" text="PRIMARY")
+      ci-button-block(modifier="radius" color="secondary" text="SECONDARY")
 
-      ci-button(modifier="block radius" size="big" text="DEFAULT")
-      ci-button(modifier="block radius" color="primary" size="big" text="PRIMARY")
-      ci-button(modifier="block radius" color="secondary" size="big" text="SECONDARY")
+      ci-button-block(modifier="radius" size="big" text="DEFAULT")
+      ci-button-block(modifier="radius" color="primary" size="big" text="PRIMARY")
+      ci-button-block(modifier="radius" color="secondary" size="big" text="SECONDARY")
 </template>
 
 <script>
