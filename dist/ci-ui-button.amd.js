@@ -137,12 +137,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     size: {
       style: String,
       default: '' // small, big
+    },
+
+    text: {
+      style: String,
+      default: ''
+    },
+
+    icon: {
+      style: String,
+      default: ''
     }
   },
 
   computed: {
     class_name: function class_name() {
-      var name = '';
+      var name = [];
       if (this.modifier) {
         name = this.modifier.split(' ');
         name = name.map(function (item) {

@@ -1,7 +1,7 @@
 /**
  * @fileoverview gulpfile
  * @author burning (www.cafeinit.com)
- * @version 2017.06.22
+ * @version 2017.07.20
  */
 
 'use strict'
@@ -19,7 +19,7 @@ gulp.task('default', ['views', 'style', 'copy'])
 
 gulp.task('views', () => {
   return gulp.src([
-    './src/views/*.pug'
+    './src/layout/*.pug'
   ])
     .pipe(pug({
       data: {
@@ -42,7 +42,7 @@ gulp.task('style', () => {
 
 gulp.task('copy', () => {
   return gulp.src([
-    '../dist/*'
+    '../dist/*.css'
   ])
     .pipe(gulp.dest('./dist/style'))
 })
