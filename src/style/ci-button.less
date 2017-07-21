@@ -30,19 +30,19 @@
   min-width: @min-width;
   height: @height;
   padding: 0 @padding;
-  margin: 8 * @REM;
+  margin: 0 8 * @REM 0 0;
   line-height: @height;
   font-size: @font_size;
 }
 
 .ci-button,
-.ci-button-block {
+.ci-button_block {
   .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
 }
 
 .ci-button,
-.ci-button-block,
-.ci-button-flat {
+.ci-button_block,
+.ci-button_flat {
   .ci-button-size(
     @BUTTON_MIN_WIDTH,
     @BUTTON_HEIGHT,
@@ -51,8 +51,8 @@
 }
 
 .ci-button,
-.ci-button-block,
-.ci-button-fab {
+.ci-button_block,
+.ci-button_fab {
   // .ci-button__text {
   //   color: @COLOR_WHITE;
   // }
@@ -81,8 +81,8 @@
 }
 
 .ci-button,
-.ci-button-block,
-.ci-button-flat, {
+.ci-button_block,
+.ci-button_flat, {
   &.ci-button_big {
     .ci-button-size(
       @BIG_BUTTON_MIN_WIDTH,
@@ -101,14 +101,14 @@
 }
 
 
-.ci-button-block {
+.ci-button_block {
   width: 100%;
   margin-left: auto!important;
   margin-right: auto!important;
 }
 
 
-.ci-button-flat {
+.ci-button_flat {
   .ci-button(@COLOR_GRAY_DARKER, transparent);
 
   &:hover {
@@ -120,12 +120,12 @@
   }
 
   &.ci-button_primary {
-    // background-color: @COLOR_WHITE;
+    background-color: @COLOR_WHITE;
     color: @COLOR_PRIMARY;
 
-    // &:hover {
-    //   background-color: lighten(@COLOR_PRIMARY, 10%);
-    // }
+    &:hover {
+      background-color: lighten(@COLOR_GRAY_LIGHTER, 10%);
+    }
 
     &.ci-button_border {
       border-color:  @COLOR_PRIMARY;
@@ -133,12 +133,12 @@
   }
 
   &.ci-button_secondary {
-    // background-color: @COLOR_WHITE;
+    background-color: @COLOR_WHITE;
     color: @COLOR_SECONDARY;
 
-    // &:hover {
-    //   background-color: lighten(@COLOR_SECONDARY, 10%);
-    // }
+    &:hover {
+      background-color: lighten(@COLOR_GRAY_LIGHTER, 10%);
+    }
 
     &.ci-button_border {
       border-color:  @COLOR_SECONDARY;
@@ -147,7 +147,7 @@
 }
 
 
-.ci-button-fab {
+.ci-button_fab {
   @size: @BUTTON_HEIGHT;
   .ci-button(@COLOR_GRAY_DARKER, @COLOR_GRAY_LIGHTER);
   .ci-button-size(@size, @size, 0, @BUTTON_FONT_SIZE);
@@ -186,4 +186,12 @@
 
 .ci-button_raised {
   .ci-raised();
+}
+
+
+.ci-button:last-child,
+.ci-button_block:last-child,
+.ci-button_flat:last-child
+.ci-button_fab:last-child {
+  margin-right: 0;
 }

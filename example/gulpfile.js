@@ -15,7 +15,7 @@ const pug = require('gulp-pug')
 const autoprefix = new LessAutoprefix({ browsers: ['last 5 versions'] })
 
 // tasks
-gulp.task('default', ['views', 'style', 'copy'])
+gulp.task('default', ['views', 'style', 'copy:ci-buttons', 'copy:ci-ui-base'])
 
 gulp.task('views', () => {
   return gulp.src([
@@ -40,9 +40,16 @@ gulp.task('style', () => {
     .pipe(gulp.dest('./dist/style'))
 })
 
-gulp.task('copy', () => {
+gulp.task('copy:ci-buttons', () => {
   return gulp.src([
     '../dist/*.css'
+  ])
+    .pipe(gulp.dest('./dist/style'))
+})
+
+gulp.task('copy:ci-ui-base', () => {
+  return gulp.src([
+    './node_modules/ci-ui-base/dist/*.css',
   ])
     .pipe(gulp.dest('./dist/style'))
 })

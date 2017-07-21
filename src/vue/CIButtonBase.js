@@ -6,7 +6,7 @@
 
 export default class CIButtonBase {
   constructor(name) {
-    this.name = name
+    this.name = name ? ('ci-button-' + name) : 'ci-button'
 
     this.props = {
       name: {
@@ -42,7 +42,8 @@ export default class CIButtonBase {
 
     this.computed = {
       class_name() {
-        let name = [ this.name ]
+        let default_name = this.name ? ('ci-button_' + this.name) : 'ci-button'
+        let name = [ default_name ]
 
         if (this.modifier) {
           const modifier = this.modifier.split(' ')

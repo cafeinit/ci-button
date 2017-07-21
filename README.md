@@ -15,6 +15,8 @@ import CIButtons from 'ci-buttons'
 Vue.use(CIButtons.plugin)
 ```
 
+## Template
+
 ```html
 <ci-button color="primary" size="big" modifier="radius" text="CafeInit"></ci-button>
 

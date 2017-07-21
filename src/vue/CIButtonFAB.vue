@@ -8,5 +8,5 @@
  */
 
 import CIButtonBase from './CIButtonBase.js'
-export default new CIButtonBase('ci-button-fab')
+export default new CIButtonBase('fab')
 </script>

@@ -4,8 +4,8 @@
   "description": "CafeInit UI Button example",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "webpack-dev-server --open --hot",
+    "build": "webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,18 +23,11 @@
   },
   "homepage": "https://github.com/cafeinit/ci-buttons#readme",
   "dependencies": {
+    "ci-ui-base": "^1.1.0",
     "vue": "^2.4.1"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.4.2",
-    "gulp-less": "^3.3.0",
     "gulp-pug": "^3.3.0",
-    "less-plugin-autoprefix": "^1.5.1",
-    "vue-loader": "^11.1.4",
-    "vue-template-compiler": "^2.2.1",
-    "webpack": "^2.2.0",
     "webpack-dev-server": "^2.5.1"
   }
 }
