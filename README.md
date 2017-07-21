@@ -1,5 +1,5 @@
 # ci-button
-CafeInit Buttons
+CafeInit Button
 
 
 ## Install
@@ -10,15 +10,15 @@ npm install --save ci-button
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import CIButtons from 'ci-button'
+import CIButton from 'ci-button'
 
-Vue.use(CIButtons.plugin)
+Vue.use(CIButton.plugin)
 ```
 
 ## Template
 
 ```html
-<ci-button color="primary" size="big" modifier="radius" text="CafeInit"></ci-button>
+<ci-button modifier="radius" color="primary" size="big" modifier="radius" text="CafeInit"></ci-button>
 
-<ci-button-block modifier="radius" text="Block Button"></ci-button>
+<ci-button modifier="block radius" text="Block Button"></ci-button>
 ```
