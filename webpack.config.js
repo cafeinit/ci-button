@@ -9,7 +9,7 @@ const webpack = require('webpack')
 
 module.exports = {
   entry: {
-    'ci-buttons': './src/vue/index.js'
+    'ci-button': './src/vue/index.js'
   },
 
   output: {

@@ -1,16 +1,16 @@
-# ci-buttons
+# ci-button
 CafeInit Buttons
 
 
 ## Install
 ```shell
-npm install --save ci-buttons
+npm install --save ci-button
 ```
 
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import CIButtons from 'ci-buttons'
+import CIButtons from 'ci-button'
 
 Vue.use(CIButtons.plugin)
 ```

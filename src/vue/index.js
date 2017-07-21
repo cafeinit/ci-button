@@ -5,38 +5,18 @@
  */
 
 import CIButton from './CIButton.vue'
-import CIButtonBlock from './CIButtonBlock.vue'
-import CIButtonFAB from './CIButtonFAB.vue'
-import CIButtonFlat from './CIButtonFlat.vue'
 
-const components = {
-  CIButton,
-  CIButtonBlock,
-  CIButtonFAB,
-  CIButtonFlat
-}
-
-const CIButtons = {
-  name: 'CIButtons',
-  version: '1.1.0',
-  plugin: plugin,
-
-  CIButton,
-  CIButtonBlock,
-  CIButtonFAB,
-  CIButtonFlat
-}
+CIButton.version = '1.1.0'
+CIButton.plugin = plugin
 
 if (window.Vue) {
   Vue.use(plugin)
 }
 
-window.CIButtons = CIButtons
+window.CIButton = CIButton
 
-export default CIButtons
+export default CIButton
 
 function plugin(Vue) {
-  for (let key in components) {
-    Vue.component(components[key].name, components[key])
-  }
+  Vue.component(CIButton.name, CIButton)
 }
