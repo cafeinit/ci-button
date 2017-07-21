@@ -37,6 +37,6 @@ gulp.task('build', () => {
     }))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(header(banner, { pkg: pkg }))
-    .pipe(rename('ci-ui-button.css'))
+    .pipe(rename('ci-buttons.css'))
     .pipe(gulp.dest('./dist'))
 })

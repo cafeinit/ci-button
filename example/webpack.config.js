@@ -33,8 +33,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      'ci-ui-button': path.resolve(__dirname, '../dist/ci-ui-button.amd.js')
+      'vue$': 'vue/dist/vue.esm.js'
     }
   },
 

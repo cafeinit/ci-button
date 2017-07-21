@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cafeinit/ci-ui-button.git"
+    "url": "git+https://github.com/cafeinit/ci-buttons.git"
   },
   "keywords": [
     "CafeInit",
@@ -19,9 +19,9 @@
   "author": "burning",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cafeinit/ci-ui-button/issues"
+    "url": "https://github.com/cafeinit/ci-buttons/issues"
   },
-  "homepage": "https://github.com/cafeinit/ci-ui-button#readme",
+  "homepage": "https://github.com/cafeinit/ci-buttons#readme",
   "dependencies": {
     "vue": "^2.4.1"
   },

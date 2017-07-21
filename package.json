@@ -1,17 +1,15 @@
 {
-  "name": "ci-ui-button",
+  "name": "ci-buttons",
   "version": "1.1.0",
-  "description": "CafeInit UI button",
+  "description": "CafeInit Buttons",
   "main": "index.js",
   "scripts": {
-    "build": "gulp && npm run build:amd && npm run build:var",
-    "build:amd": "webpack --config ./webpack.config.amd.js",
-    "build:var": "webpack --config ./webpack.config.js",
+    "build": "gulp && webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cafeinit/ci-ui-button.git"
+    "url": "git+https://github.com/cafeinit/ci-buttons.git"
   },
   "keywords": [
     "CafeInit",
@@ -20,9 +18,9 @@
   "author": "burning",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cafeinit/ci-ui-button/issues"
+    "url": "https://github.com/cafeinit/ci-buttons/issues"
   },
-  "homepage": "https://github.com/cafeinit/ci-ui-button#readme",
+  "homepage": "https://github.com/cafeinit/ci-buttons#readme",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",

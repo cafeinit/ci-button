@@ -9,15 +9,15 @@ const webpack = require('webpack')
 
 module.exports = {
   entry: {
-    'ci-ui-button': './src/vue/index.js'
+    'ci-buttons': './src/vue/index.js'
   },
 
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js',
-    library: 'CIUIButton',
-    libraryTarget: 'var'  // Export by setting a variable: var Library = xxx (default)
-    // libraryTarget: 'amd'  // Export to AMD (optionally named - set the name via the library option)
+    library: 'CIButtons',
+    // libraryTarget: 'var'  // Export by setting a variable: var Library = xxx (default)
+    libraryTarget: 'amd'  // Export to AMD (optionally named - set the name via the library option)
     // libraryTarget: 'umd'  // Export to AMD, CommonJS2 or as property in root
   },
 

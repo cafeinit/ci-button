@@ -1,2 +1,22 @@
-# ci-ui-button
-CafeInit UI Button
+# ci-buttons
+CafeInit Buttons
+
+
+## Install
+```shell
+npm install --save ci-buttons
+```
+
+## Quick Start
+``` javascript
+import Vue from 'vue'
+import CIButtons from 'ci-buttons'
+
+Vue.use(CIButtons.plugin)
+```
+
+```html
+<ci-button color="primary" size="big" modifier="radius" text="CafeInit"></ci-button>
+
+<ci-button-block modifier="radius" text="Block Button"></ci-button>
+```

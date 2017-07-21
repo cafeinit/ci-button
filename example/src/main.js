@@ -5,10 +5,10 @@
  */
 
 import Vue from 'vue'
-import CIUIButton from 'ci-ui-button'
+import CIButtons from 'ci-buttons'
 import App from './App.vue'
 
-Vue.use(CIUIButton.plugin)
+Vue.use(CIButtons.plugin)
 
 var app = new Vue({
   el: '#app',
