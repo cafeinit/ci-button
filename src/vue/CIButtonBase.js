@@ -4,7 +4,7 @@
  * @version 2017.07.20
  */
 
-export default class ClassName {
+export default class CIButtonBase {
   constructor(name) {
     this.name = name
 
@@ -38,7 +38,7 @@ export default class ClassName {
         style: String,
         default: ''
       }
-    },
+    }
 
     this.computed = {
       class_name() {
