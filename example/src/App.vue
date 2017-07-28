@@ -9,7 +9,7 @@
           ci-list-body
             ci-list-cell
               h4 Common
-              ci-button(text="DEFAULT")
+              ci-button(text="DEFAULT" @click="onClick")
               ci-button(color="primary" text="PRIMARY")
               ci-button(color="secondary" text="SECONDARY")
 
@@ -171,6 +171,12 @@
 
 <script>
 export default {
-  name: 'view-app'
+  name: 'view-app',
+
+  methods: {
+    onClick(evt) {
+      console.log('onClick', evt)
+    }
+  }
 }
 </script>

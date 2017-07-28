@@ -1,8 +1,8 @@
 <template lang="pug">
-  button(:class="class_name")
-    span.ci-button__text(v-if="text") {{text}}
-    i.ci-button__icon.material-icons(v-if="icon") {{icon}}
-    slot
+button(:class="class_name" @click="onClick")
+  span.ci-button__text(v-if="text") {{text}}
+  i.ci-button__icon.material-icons(v-if="icon") {{icon}}
+  slot
 </template>
 
 <script>
@@ -62,6 +62,12 @@ export default {
       }
 
       return name
+    }
+  },
+
+  methods: {
+    onClick(evt) {
+      this.$emit('click', evt)
     }
   }
 }
