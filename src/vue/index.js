@@ -6,7 +6,7 @@
 
 import CIButton from './CIButton.vue'
 
-CIButton.version = '1.1.0'
+CIButton.version = '1.2.0'
 CIButton.plugin = plugin
 
 if (window.Vue) {

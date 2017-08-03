@@ -1,7 +1,8 @@
 <template lang="pug">
-button(:class="class_name" @click="onClick")
+button(:class="className" @click="onClick")
   span.ci-button__text(v-if="text") {{text}}
   i.ci-button__icon.material-icons(v-if="icon") {{icon}}
+  i.ci-button__icon(v-if="iconClassName" :class="iconClassName")
   slot
 </template>
 
@@ -9,7 +10,7 @@ button(:class="class_name" @click="onClick")
 /**
  * @fileoverview CIButton
  * @author burning (www.cafeinit.com)
- * @version 2017.07.21
+ * @version 2017.08.03
  */
 
 export default {
@@ -39,11 +40,16 @@ export default {
     icon: {
       style: String,
       default: ''
+    },
+
+    iconClassName: {
+      type: String,
+      default: ''
     }
   },
 
   computed: {
-    class_name() {
+    className() {
       let name = [ 'ci-button' ]
 
       if (this.modifier) {
